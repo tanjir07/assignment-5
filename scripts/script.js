@@ -13,11 +13,11 @@ for (btnn of allbtn){
     btnn.addEventListener("click", function(e){
 
         if (count>=4){
-            return limited
+            return alert('Limited to 4 tickets')
         }
         count = count + 1;
     
-    const seat = btnn.innerText;
+    const seat = e.target.innerText;
     const className = 'Ecomomy';
     const unitPrice = '550';
     const selectedContainer= document.getElementById("seat-container");
@@ -55,10 +55,22 @@ for (btnn of allbtn){
 
 
 
+   e.target.style.backgroundColor="green"
+   e.target.setAttribute("disabled", false);
+   e.target.setAttribute("editable", true);
+   
 
-
-
-
+//    function couponCall() {
+//     const couponCode = document.getElementById("coupon-code").value.trim();
+//     const couponSection = document.getElementById("coupon-section");
+//     const grandP = document.getElementById("")
+//     if (couponCode === "NEW15") {
+//         couponSection.classList.add("hidden")
+//         ;
+//     } else if (couponCode === "Couple 20") {
+//         couponSection.classList.add("hidden");
+//     }
+// }
 
 
 
@@ -76,3 +88,25 @@ function setInnerText(id, value){
     document.getElementById(id).innerText = value
 
 }
+function modal(){
+    
+    
+    
+    const homeScreen = document.getElementById("home-screen");
+    homeScreen.classList.add('hidden')
+    const modalSection = document.getElementById('modal-screen')
+    modalSection.classList.remove('hidden')
+    
+}
+
+// function couponCall() {
+//     const couponCode = document.getElementById("coupon-code").value.trim();
+//     const couponSection = document.getElementById("coupon-section");
+//     const grandP = document.getElementById("")
+//     if (couponCode === "NEW15") {
+//         couponSection.classList.add("hidden")
+//         ;
+//     } else if (couponCode === "Couple 20") {
+//         couponSection.classList.add("hidden");
+//     }
+// }
