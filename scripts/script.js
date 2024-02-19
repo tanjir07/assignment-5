@@ -1,11 +1,4 @@
-// document.getElementsByClassName("seatname").addEventListener("click", function(e){
 
-//     console.log("boss")
-// })
-
-// function handleClick(event){
-//  console.log(event.target.parentNode.childNodes[1].innerText);
-// }
 
 const allbtn = document.getElementsByClassName("seatname")
 let count = 0
@@ -60,24 +53,6 @@ for (btnn of allbtn){
    e.target.setAttribute("editable", true);
    
 
-//    function couponCall() {
-//     const couponCode = document.getElementById("coupon-code").value.trim();
-//     const couponSection = document.getElementById("coupon-section");
-//     const grandP = document.getElementById("")
-//     if (couponCode === "NEW15") {
-//         couponSection.classList.add("hidden")
-//         ;
-//     } else if (couponCode === "Couple 20") {
-//         couponSection.classList.add("hidden");
-//     }
-// }
-
-
-
-
-
-
-
 
       setInnerText('seat-booked', count)
 
@@ -109,4 +84,5 @@ function couponCall() {
         couponSection.classList.add("hidden");
     }
 }
+
 
