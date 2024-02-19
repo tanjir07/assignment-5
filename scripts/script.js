@@ -99,14 +99,3 @@ function modal(){
     
 }
 
-// function couponCall() {
-//     const couponCode = document.getElementById("coupon-code").value.trim();
-//     const couponSection = document.getElementById("coupon-section");
-//     const grandP = document.getElementById("")
-//     if (couponCode === "NEW15") {
-//         couponSection.classList.add("hidden")
-//         ;
-//     } else if (couponCode === "Couple 20") {
-//         couponSection.classList.add("hidden");
-//     }
-// }
