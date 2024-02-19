@@ -99,3 +99,14 @@ function modal(){
     
 }
 
+
+function couponCall() {
+    var couponCode = document.getElementById("coupon-code").value.trim();
+    var couponSection = document.getElementById("coupon-section");
+    if (couponCode === "NEW15") {
+        couponSection.classList.add("hidden");
+    } else if (couponCode === "Couple 20") {
+        couponSection.classList.add("hidden");
+    }
+}
+
